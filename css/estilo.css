@@ -7,7 +7,7 @@
  body {
  	font-size:  1em; /* Equivale a 16px */
  	font-family: "Trebuchet MS", Helvetica, sans-serif;
- 	background: #e6e6e6;
+ 	background: url(../Imagens/background.jpg);
  }
 
  /*
@@ -31,7 +31,7 @@
 	padding: 15px;
 }
 
-#area-postagens {
+#area-postagens, #area-contato {
 	width: 660px;
 	float: left;
 }
@@ -63,6 +63,15 @@
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
 }
 
+.fundo-img-lateral {
+	background: rgba(255, 255, 255,0.3);
+	padding: 10px;
+	margin-bottom: 20px;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
+}
+
+
+
 .postagem-lateral {
 	font-variant: 0.8em;
 	padding: 5px;
@@ -92,8 +101,9 @@ ul a:hover {
 	clear: both;
 	text-align: center;
 	font-weight: bold;
-	padding: 10px;
-	background: #CCC;
+	padding: 5px;
+	background-image: linear-gradient(45deg, #CC2EFA, #2E64FE);
+	color: #FFF;
 	border-radius: 10px;
 }
 
@@ -142,13 +152,15 @@ background: linear-gradient(45deg, #CC2EFA 0%, #2E64FE 100%);
 }
 
 h3 {
-	color: #565656;
-	background: #CCC;
+	color: #FFF;
+	background-image: linear-gradient(45deg, #CC2EFA, #2E64FE);
 	padding: 5px;
+
 }
 
 .branco {
 	color: white;
+	margin-right: 4px;
 }
 
 .data-postagem {
@@ -157,4 +169,109 @@ h3 {
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 	display: block; /* mudar para block para aplicar as propriedades de margin e bord */
+}
+
+
+.formulario {
+	width: 240px;
+	background: rgba(255, 255, 255,0.3);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+
+.formulario img {
+	width: 110px;
+	height: 140px;
+	margin-top: -50px;
+	margin-bottom: 10px;
+}
+
+input {
+	height: 40px;
+	width: 80%;
+	font-size: 18px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding-left: 40px;
+	border:  none;
+	background-repeat: no-repeat;
+	background-position: 8px;
+}
+
+input.email {
+	background-image: url(../imagens/icone-usuario.png);
+}
+
+input.senha {
+	background-image: url(../imagens/icone-cadeado.png);
+}
+
+input.submit {
+	color: #FFF;
+	background-color: #2E64FE;
+	border: 2px solid #CC2EFA;
+	padding: 5px 20px;
+	height: 45px;
+	width: 90%;
+	/* Prefixo para o degradê funcionar em navegadores antigos */
+	background: -webkit-linear-gradient(to bottom, #CC2EFA, #2E64FE); 
+	background: -moz-linear-gradient(to bottom, #CC2EFA, #2E64FE);
+	background: -o-linear-gradient(to bottom, #CC2EFA, #2E64FE);
+	background: linear-gradient(to bottom, #CC2EFA, #2E64FE); 
+}
+
+
+/* 
+############## Pag. Contato ################
+*/
+
+.contato {
+	padding: 20px;
+	margin-bottom: 20px;
+	background: rgba(255, 255, 255,0.3);
+}
+
+fieldset {
+	margin: 1em 0; /* Adiciona espaçamento de 1em superior e inferior e 0 nas laterais */
+	padding: 1em;
+	border: 1px solid #ccc;
+	background: linear-gradient(45deg, #CC2EFA, #2E64FE);
+}
+
+legend {
+	font-weight: bold;
+	color: #FFF;
+	-webkit-text-stroke-width: 1.2px;
+	-webkit-text-stroke-color: #000;
+	font-size: 1.4em;
+}
+
+label {
+	display:  block;
+	color: #FFF;
+	cursor: pointer; /* Transforma o mouse em uma mão "clicavel" */
+}
+
+.text-contato input {   
+	padding: 0px;
+	width: 20em;
+}
+
+textarea {
+	width: 20em;
+	height: 8em;
+	font-size: 1.3em;
+}
+
+input.radio, input.checkbox, input.submit {
+	height: auto;
+	width: auto;
+}
+
+.radio {
+	margin-right: 1em;
 }

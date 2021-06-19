@@ -20,45 +20,58 @@
 		</div> <!-- Fim cabeçalho -->
 		<div id="area-principal"> <!-- Inicio principal -->
 
-			<div id="area-postagens"> 
+			<div id="area-contato"> 
 				
-				<div class="postagem"> <!-- Inicio postagem -->
-					<h2>Ultra Phone X2 - Poderoso!</h2>
-					<span class="data-postagem">postado em 16 de junho 2021</span>
-					<img class="img-borda" width="620px" src="imagens/imagem3.jpg">
-					<p>
-						A <strong>Levelho</strong> anunciou o novo smartphone gamer Ultra Phone X2 nesta quarta-feira (16/06). Extremamente poderoso, o aparelho apresenta 16gb de memória RAM, duas portas USB-C e nossa boa e velha entrada p2.
-					</p>
-					<a href="">Leia mais</a>
-				</div>  <!-- Fim postagem -->
+				<div class="contato"> <!-- Inicio postagem -->
+				
+					<form> <!-- Criar formulários -->
+						<fieldset> <!-- Utilizado para agrupar dados semelhantes -->
+							<legend>Detalhes de contato</legend> <!-- Cria um "titulo" para o fieldset -->
+							<div>
+								<!-- comando "for" associa a label ao id -->
+								<label for="nome" >Nome:</label> <!-- Cria caixas de texto -->
+								<input class="text-contato" type="text" name="nome" id="nome">
+							</div>
 
-				<div class="postagem"> <!-- Inicio postagem -->
-					<h2>Notebook ultrafino e leve: vale a pena?</h2>
-					<span class="data-postagem">postado em 14 de junho 2021</span>
-					<img class="img-borda" width="620px" src="imagens/imagem1.jpg">
-					<p>
-						A <strong>MicroSafe</strong> acaba de lançar seu mais novo produto, um notebook ultrafino que (<i>acredite se quiser</i>) passar em baixo da sua porta! Além do design inovar, o aparelho apresenta um hardware poderoso com 32gb de memória RAM, placa de vídeo GeForce 3060 e um belo SSD de 1tb.
-					</p>
-					<a href="">Leia mais</a>
-				</div>  <!-- Fim postagem -->
+							<div>
+								<label for="email" >E-mail:</label>
+								<input input class="text-contato" type="text" name="email" id="email">
+							</div>
+
+							<div>
+								<label for="url" >URL:</label>
+								<input input class="text-contato" type="text" name="url" id="url">
+								</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>Comentários</legend>
+							<div>
+								<label for = mensagem>Mensagem:</label>
+								<textarea name="mensagem" id="mensagem"></textarea>
+							</div>
+						</fieldset>
+
+						<fieldset>
+							<legend>Lembrar de mim</legend>
+							<div>
+								<label>
+									<input class="radio" type="radio" name="lembrar" id="sim">Sim
+								</label>
+							</div>
+
+							<div>
+								<label>
+									<input class="radio" type="radio" name="lembrar" id="nao">Não
+								</label>
+							</div>
+						</fieldset>
+					</form>
+				</div>  <!-- Fim contato -->
 
 			</div>
 
 			<div id="area-lateral">
-				<div class="formulario">
-						<img src="imagens/perfil.png">
-						<form>
-							<div>
-								<input class="email" type="text" name="email" id="email" placeholder="Digite seu e-mail">
-							</div>
-							<div>
-								<input class="senha" type="password" name="senha" id="senha" placeholder="Digite sua senha">
-							</div>
-							<div>
-								<input class="submit" type="submit" value="Logar">
-							</div>
-						</form>
-					</div>
 				<div class="conteudo-lateral">
 					<h3>Postagens recentes</h3>
 					<div class="postagem-lateral">  <!-- Inicio postagem L-->
@@ -98,5 +111,6 @@
 			<div id="rodape">
 				<p>&copy; Victor Abiscula<p>
 			</div>
+		</div> <!-- Fim principal -->
 	</body>
 </html>
