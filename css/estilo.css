@@ -1,0 +1,266 @@
+ body {
+	font-size: 1rem;
+ 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+ 	background: linear-gradient(#888888, #FEFEFE, #888888);
+ }
+
+ header, h3, h2, footer, button {
+	font-family: 'Montserrat', sans-serif;
+ }
+
+/* --------------- cabeçalho --------------- */
+
+header {
+	background: rgb(92, 91, 91);
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
+	padding: 3rem;
+	text-align: center;
+}
+
+.div-header {
+	display: flex;
+	width: 940px;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.h1-header {
+	display: flex;
+	font-size: 2.3em;
+	font-weight: bold;
+	color: #FFF;
+}
+
+.h1-tec {
+	color: #97ABFF;
+}
+
+.h1-tec:after {
+	color: #FFF;
+	content: ' ☣';
+}
+
+.nav-header {
+	display: flex;
+	align-items: center;
+	font-size: 1.1rem;
+}
+
+header a, header a:visited { /* Combinação de seletores para definir propriedades apenas nos links desejados*/
+	color: #FFF;
+	margin: 0 0.8rem;
+	text-decoration: none;
+}
+
+header a:hover { 
+	color: #97ABFF;
+}
+
+/* --------------- main --------------- */
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	width: 940px;
+	margin: 2rem auto;
+}
+
+main {
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+}
+
+section {
+	padding: 1rem;
+	margin-bottom: 2rem;
+	background: rgb(141, 97, 91);
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
+	border-radius: 15px;
+}
+
+section p {
+	padding: 0.5rem;
+	text-align: center;
+	color: rgb(218, 213, 213);
+}
+
+h2 {
+	font-size: 1.3rem;
+	font-weight: bold;
+	color: #FFF;
+}
+
+.img-section {
+	border-radius: 15px;
+	width: 100%;
+}
+
+.container .a-leia-mais {
+	display: block;
+	color: #97ABFF;
+	margin: 0.4rem 0 0.2rem;
+	text-decoration: none;
+}
+
+
+/* --------------- lateral --------------- */
+aside {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.conteudo-lateral {
+	background: white;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
+}
+
+h3 {
+	text-align: center;
+	font-size: 1.2rem;
+	padding: 0.5rem;
+	background: rgb(92, 91, 91);
+	display: block;
+	color: #FFF;
+}
+
+.img-lateral {
+	border-radius: 15px;
+	width: 100%;
+}
+
+.fundo-img-lateral {
+	display: flex;
+	background: rgba(255, 255, 255,0.3);
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
+}
+
+.postagem-lateral {
+	font-variant: 0.8em;
+	padding: 5px;
+}
+
+ul {
+	list-style-type: none;  /* -> Remove as bolinhas da lista */
+}
+
+ul a {
+	text-decoration: none;
+	line-height: 2.5rem;
+	font-size: 1.1rem;
+	display: block;
+}
+
+ul a:before {
+	content: ' ♦ ';
+}
+
+ul a:hover {
+	color:  #fff;
+}
+
+footer {
+	text-align: center;
+	font-weight: bold;
+	padding: 1rem;
+	background: rgb(92, 91, 91);
+	color: #FFF;
+}
+
+.conteudo-lateral a {
+	text-decoration: none;
+	color: rgb(92, 91, 91);
+	font-weight: bold;
+}
+
+.conteudo-lateral a:link, a:visited { 
+	color: rgb(92, 91, 91);
+	font-weight: bold;
+}
+
+.conteudo-lateral li:hover {
+	color: #FFF;
+	background:  #d9534f;
+}
+
+
+.data-postagem {
+	font-size: 0.8em;
+	color: rgb(230, 225, 225);
+	border-bottom: 1px solid #e7e5e5;
+	margin: 0.8rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background: rgba(255, 255, 255,0.3);
+	border-radius: 10px;
+	margin-bottom: 1rem;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
+
+}
+
+.formulario img {
+	display: flex;
+	/* justify-content: space-between; */
+	width: 50%;
+}
+
+input {
+	display: flex;
+	height: 40px;
+	width: 75%;
+	font-size: 18px;
+	margin: auto auto 10px;
+	background-color: #fff;
+	padding-left: 40px;
+	border:  none;
+	background-repeat: no-repeat;
+	background-position: 0.4rem;
+}
+
+input.email {
+	background-image: url(../imagens/icone-usuario.png);
+}
+
+input.senha {
+	background-image: url(../imagens/icone-cadeado.png);
+}
+
+.div-button {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+button {
+	color: #FFF;
+	background-color: #d9534f;
+	cursor: pointer;
+	margin-bottom: 10px;
+	height: 40px;
+	width: 80%;
+	border-radius: 10px;
+	font-size: 1.2em;
+	border: none;
+	transition: 1s all;
+}
+
+button:hover {
+	background-color: #7c2320;
+	transform: scale(1.13);
+}
+
