@@ -1,4 +1,4 @@
- body {
+ .body-index {
 	font-size: 1rem;
  	font-family: "Trebuchet MS", Helvetica, sans-serif;
  	background: linear-gradient(#888888, #FEFEFE, #888888);
@@ -65,7 +65,7 @@ header a:hover {
 	margin: 2rem auto;
 }
 
-main {
+.main-index {
 	width: 70%;
 	display: flex;
 	flex-direction: column;
@@ -161,7 +161,7 @@ ul a:before {
 	content: ' ♦ ';
 }
 
-ul a:hover {
+.conteudo-lateral ul a:hover {
 	color:  #fff;
 }
 
@@ -200,7 +200,7 @@ footer {
 }
 
 
-.formulario {
+.form-login {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -212,13 +212,13 @@ footer {
 
 }
 
-.formulario img {
+.form-login img {
 	display: flex;
 	/* justify-content: space-between; */
 	width: 50%;
 }
 
-input {
+.input-index {
 	display: flex;
 	height: 40px;
 	width: 75%;
@@ -226,7 +226,7 @@ input {
 	margin: auto auto 10px;
 	background-color: #fff;
 	padding-left: 40px;
-	border:  none;
+	border: 1px solid white;
 	background-repeat: no-repeat;
 	background-position: 0.4rem;
 }
@@ -239,14 +239,22 @@ input.senha {
 	background-image: url(../imagens/icone-cadeado.png);
 }
 
+.cont-senha-login {
+	font-size: 0.7rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-right: 1rem;
+}
+
 .div-button {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-
+	margin-top: 0.6rem;
 }
 
-button {
+.botao-login {
 	color: #FFF;
 	background-color: #d9534f;
 	cursor: pointer;
@@ -259,8 +267,212 @@ button {
 	transition: 1s all;
 }
 
-button:hover {
+.botao-login:hover {
 	background-color: #7c2320;
 	transform: scale(1.13);
 }
 
+
+/* --------------- Página Contato  --------------- */
+
+.body-contato {
+	font-size: 1rem;
+ 	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: rgba(124, 121, 121, 0.74);
+}
+
+.formulario-cadastro {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	width: 940px;
+	margin: 2rem auto;
+	padding: 5rem;
+	border-radius: 10px;
+}
+
+.contato-label {
+	display: block;
+	font-size: 1.2rem;
+	color: #FEFEFE;
+	font-weight: bold;
+	margin: 0.25rem 15% 0.5rem 15.5%;
+}
+
+.contato-input {
+	font-size: 1.2rem;
+	height: 2.5rem;
+	width: 70%;
+	border: none;
+	margin: 0.5rem 15% 1.5rem 15%;
+	border-radius: 8px;
+	padding-left: 1rem;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
+}
+
+.contato-input::placeholder {
+	color: #d9534f;
+	font-size: 1rem;
+}
+
+.contato-radio {
+	margin-right: 1rem;
+}
+
+.label-contato-radio {
+	font-size: 1.2rem;
+	padding: 0.1rem;
+	color: #FEFEFE;
+	font-weight: bold;
+	margin: 0.5rem 15%;
+	
+}
+
+
+.botao-contato {
+	color: #FEFEFE;
+	background-color: #d9534f;
+	cursor: pointer;
+	margin: 2rem 15% 2rem 15%;
+	height: 40px;
+	width: 30%;
+	border-radius: 10px;
+	font-size: 1.2em;
+	border: none;
+	transition: 1s all;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
+}
+
+.botao-contato:hover {
+	background-color: #7c2320;
+	transform: scale(1.13);
+}
+
+/* --------------- Página Games  --------------- */
+.body-games {
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	background: rgba(148, 146, 146, 0.74);
+}
+
+.main-games {
+	width: 940px;
+	display: flex;
+	margin: 2rem auto;
+	flex-direction: column;
+}
+
+.div-games {
+	width: 100%;
+	display: flex;
+}
+
+table {
+	margin-bottom : 5rem;
+	background: #eeeded;
+	color: #000;
+}
+
+td, th {
+	padding: 0.7em;
+	margin: 0;
+	border: 1px solid #7c2320;
+	text-align: center;
+}
+
+th {
+	font-weight: bold;
+	background: rgb(141, 97, 91);
+	color: #FFF;
+}
+
+
+
+.form-games {
+	display: flex;
+	flex-direction: column;
+	background: rgba(124, 121, 121, 0.74);
+	padding: 2rem;
+	border-radius: 10px;
+	margin-bottom: 5.2rem;
+}
+
+
+.div-form-games {
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: row;
+}
+
+
+.games-label {
+	width: 30%;
+	color: white;
+	font-weight: bold;
+}
+
+.game-input {
+	width: 50%;
+	height: 2rem;
+	margin-right: 2rem;
+	margin-bottom: 2rem;
+	border-radius: 8px;
+	border: none;
+}
+
+.div-game-button {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2.5rem;
+}
+
+.button-game {
+	height: 2rem;
+	width: 25%;
+	border-radius: 20px;
+	border: none;
+	background: rgb(141, 97, 91);
+	color: #FEFEFE;
+	font-size: 1.1rem;
+	cursor: pointer;
+}
+
+.button-game:hover {
+	background: rgb(92, 54, 49);
+}
+
+/* --------------- Classes relacionadas as manipulações do JS  --------------- */
+
+.div-login-js { 
+	text-align: center;
+}
+	
+
+.p-js, .p-js1 {
+	text-align: center;
+	font-size: 1.05rem;
+	line-height: 2rem;
+	color: rgba(0, 0, 0, 0.733)
+}
+
+.p-js1:before, .p-js1:after {
+	content: ' ❄ ';
+}
+
+.span-js {
+	font-weight: bold;
+	color: #d9534f;
+}
+
+.container .leia-mais-plus {
+	color: #000;
+}
+
+.local-erros {
+	text-align: center;
+}
+
+.li-erro {
+	color: rgb(88, 4, 4);
+	margin-bottom: 1rem;
+}

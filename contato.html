@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AbisculaTec - Contato</title>
+        <!-- Limpando CSS padrão-->
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <!-- Meu estilo -->
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body class="body-contato">
+        <header> <!-- Inicio cabeçalho -->
+                <div class="div-header">
+                    <h1 class="h1-header" data-h1-header>
+                        Abiscula<span class='h1-tec'>Tec</span>
+                    </h1>
+                    <nav class="nav-header">
+                        <a href="index.html">Home</a>
+                        <a href="games.html">Games</a>
+                        <a href="#">Smartphones</a>
+                        <a href="#">Informática</a>
+                        <a href="contato.html">Contato</a>
+                    </nav>
+                </div>
+            </header> <!-- Fim cabeçalho -->
+
+            <form class="formulario-cadastro">
+
+                    <label for="contato-text" class="contato-label">Nome e sobrenome:</label>
+                    <input type="text" id="contato-text" class="contato-input" required>
+
+                    <label for="contato-mail" class="contato-label">Email:</label>
+                    <input type="email" id="contato-mail" class="contato-input" required placeholder="seuemail@dominio.com">
+
+                    <label for="contato-senha" class="contato-label">Senha:</label>
+                    <input type="password" id="contato-senha" class="contato-input" required> 
+
+                    <label for="contato-tel" class="contato-label">Telefone:</label>
+                    <input type="tel" id="contato-tel" class="contato-input" required placeholder="(xx) xxxxx-xxxx">
+
+                    <label for="contato-nasc" class="contato-label">Data de nascimento:</label>
+                    <input type="date" id="contato-nasc" class="contato-input" required>
+
+                    <label class="contato-label">Melhor plataforma para contato:</label>
+                    <label class="label-contato-radio"><input type="radio" name="radio" class="contato-radio" checked>Whatsapp</label>
+                    <label class="label-contato-radio"><input type="radio" name="radio" class="contato-radio">Email</label>
+
+                    <button class="botao-contato">Enviar dados</button>
+            </form>
+
+
+            <footer>
+                <p>&copy; Victor Abiscula<p>
+            </footer>
+    </body>
+</html>

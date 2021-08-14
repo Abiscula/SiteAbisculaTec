@@ -1,39 +1,40 @@
 <!DOCTYPE html>
-	<html lang="pt-br">
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>AbisculaTec - O seu blog de tecnologia</title>
 		<!-- Limpando CSS padrão-->
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<!-- Meu estilo -->
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
-		 <!-- Font -->
-		 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
+		<!-- Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	</head>
-	<body>
+	<body class="body-index">
 		<header> <!-- Inicio cabeçalho -->
 			<div class="div-header">
-				<h1 class="h1-header">
+				<h1 class="h1-header" data-h1-header>
 					Abiscula<span class='h1-tec'>Tec</span>
 				</h1>
 				<nav class="nav-header">
 					<a href="index.html">Home</a>
-					<a href="#">Games</a>
+					<a href="games.html">Games</a>
 					<a href="#">Smartphones</a>
 					<a href="#">Informática</a>
-					<a href="#">Contato</a>
+					<a href="contato.html">Contato</a>
 				</nav>
 			</div>
 		</header> <!-- Fim cabeçalho -->
 
 		<div class="container"> <!-- Inicio principal -->
-			<main> 
+			<main class="main-index"> 
 				<section> <!-- Inicio section 1 -->
-					<h2>Ultra Phone X2 - Poderoso!</h2>
+					<h2 data-h2-section1>Ultra Phone X2 - Poderoso!</h2>
 					<span class="data-postagem">postado em 16 de junho 2021</span>
-					<img class="img-section" src="imagens/imagem3.jpg">
-					<p>
+					<img class="img-section" src="imagens/imagem3.jpg" data-img-section1>
+					<p data-p-section1>
 						A <strong>Levelho</strong> anunciou o novo smartphone gamer Ultra Phone X2 nesta quarta-feira (16/06). Extremamente poderoso, o aparelho apresenta 16gb de memória RAM, duas portas USB-C e nossa boa e velha entrada p2.
 					</p>
 					<a href="#" class="a-leia-mais">Leia mais</a>
@@ -51,17 +52,19 @@
 			</main>
 
 			<aside>
-				<div class="formulario">
+				<div class="form-login">
 						<img src="imagens/perfil.png">
-						<form>
+						<div class="div-login-js" data-logado></div>
+						<form data-form-conteudo>
 							<div>
-								<input class="email" type="email" id="email" placeholder="Digite seu e-mail" required>
+								<input class="input-index email" data-login-email type="email" placeholder="Digite seu e-mail" required>
 							</div>
 							<div>
-								<input class="senha" type="password" id="senha" placeholder="Digite sua senha" required>
+								<input class="input-index senha" data-login-senha type="password" placeholder="Digite sua senha" required>
+								<span class="cont-senha-login" data-cont-senha>mínimo 8 caracteres</span>
 							</div>
 							<div class="div-button">
-								<button>Login</button>
+								<button data-button-login class="botao-login">Login</button>
 							</div>
 						</form>
 					</div>
@@ -104,5 +107,7 @@
 			<footer>
 				<p>&copy; Victor Abiscula<p>
 			</footer>
+
+			<script src="./scripts/index.js"></script>
 	</body>
 </html>

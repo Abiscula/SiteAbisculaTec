@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AbisculaTec - Games</title>
+        <!-- Limpando CSS padrão-->
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<!-- Meu estilo -->
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<!-- Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body class="body-games">
+        <header> <!-- Inicio cabeçalho -->
+            <div class="div-header">
+                <h1 class="h1-header" data-h1-header>
+                    Abiscula<span class='h1-tec'>Tec</span>
+                </h1>
+                <nav class="nav-header">
+                    <a href="index.html">Home</a>
+                    <a href="games.html">Games</a>
+                    <a href="#">Smartphones</a>
+                    <a href="#">Informática</a>
+                    <a href="contato.html">Contato</a>
+                </nav>
+            </div>
+        </header> <!-- Fim cabeçalho -->
+
+        <main class="main-games">
+            <div class="div-games">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Game</th>
+                            <th>Gênero(s)</th>
+                            <th>Desenvolvedor</th>
+                            <th>Ano de lançamento</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tabela-games">
+                        <tr class="jogo">
+                            <td>The Last of Us Part II</td>
+                            <td>Ação / Aventura / Survival horror</td>
+                            <td>Naughty Dog</td>
+                            <td>2020</td>
+                        </tr>
+                        <tr class="jogo">
+                            <td>The Elder Scrolls V: Skyrim</td>
+                            <td>RPG de ação</td>
+                            <td>Bethesda Game Studios</td>
+                            <td>2011</td>
+                        </tr>
+                        <tr class="jogo">
+                            <td>Ragnarok Online</td>
+                            <td>MMORPG</td>
+                            <td>Gravity Corporation</td>
+                            <td>2002</td>
+                        </tr>
+                        <tr class="jogo">
+                            <td>Tom Clancy's Rainbow Six Siege</td>
+                            <td>FPS</td>
+                            <td>Ubisoft</td>
+                            <td>2015</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                <form class="form-games">
+                    <ul class="local-erros"></ul>
+                    <div class="div-form-games">
+                        <label for="game-nome" class="games-label">Game:</label>
+                        <input type="text" name="nome" id="games-nome" class="game-input">
+                        
+                        <label for="game-genero" class="games-label">Gênero:</label>
+                        <input type="text" name="genero" id="game-genero" class="game-input">
+                    </div>
+                    <div class="div-form-games">
+                        <label for="game-dev" class="games-label">Desenvolvedor:</label>
+                        <input type="text" name="dev" id="game-dev" class="game-input">
+
+                        <label for="game-ano" class="games-label">Ano de lançamento:</label>
+                        <input type="text" name="ano" id="game-ano" class="game-input">
+                    </div>
+                    <div class="div-game-button">
+                        <button class="button-game">Adicionar</button>
+                    </div>
+                </form>
+        </main>
+        <footer>
+            <p>&copy; Victor Abiscula<p>
+        </footer>
+        <script src="scripts/games_CriaTabela.js"></script>
+        <script src="scripts/games_Validacao.js"></script>
+    </body>
+</html>
