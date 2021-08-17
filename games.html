@@ -29,6 +29,7 @@
         </header> <!-- Fim cabeçalho -->
 
         <main class="main-games">
+            <input type="text" name="filtro" id="games-filtro" class="fitrando-jogos" placeholder="filtre a exibição">
             <div class="div-games">
                 <table>
                     <thead>
@@ -41,28 +42,28 @@
                     </thead>
                     <tbody class="tabela-games">
                         <tr class="jogo">
-                            <td>The Last of Us Part II</td>
-                            <td>Ação / Aventura / Survival horror</td>
-                            <td>Naughty Dog</td>
-                            <td>2020</td>
+                            <td class="nome-game">The Last of Us Part II</td>
+                            <td class="genero-game">Ação / Aventura / Survival horror</td>
+                            <td class="dev-game">Naughty Dog</td>
+                            <td class="ano-game">2020</td>
                         </tr>
                         <tr class="jogo">
-                            <td>The Elder Scrolls V: Skyrim</td>
-                            <td>RPG de ação</td>
-                            <td>Bethesda Game Studios</td>
-                            <td>2011</td>
+                            <td class="nome-game">The Elder Scrolls V: Skyrim</td>
+                            <td class="genero-game">RPG de ação</td>
+                            <td class="dev-game">Bethesda Game Studios</td>
+                            <td class="ano-game">2011</td>
                         </tr>
                         <tr class="jogo">
-                            <td>Ragnarok Online</td>
-                            <td>MMORPG</td>
-                            <td>Gravity Corporation</td>
-                            <td>2002</td>
+                            <td class="nome-game">Ragnarok Online</td>
+                            <td class="genero-game">MMORPG</td>
+                            <td class="dev-game">Gravity Corporation</td>
+                            <td class="ano-game">2002</td>
                         </tr>
                         <tr class="jogo">
-                            <td>Tom Clancy's Rainbow Six Siege</td>
-                            <td>FPS</td>
-                            <td>Ubisoft</td>
-                            <td>2015</td>
+                            <td class="nome-game">Tom Clancy's Rainbow Six Siege</td>
+                            <td class="genero-game">FPS</td>
+                            <td class="dev-game">Ubisoft</td>
+                            <td class="ano-game">2015</td>
                         </tr>
                     </tbody>
                 </table>
@@ -93,5 +94,7 @@
         </footer>
         <script src="scripts/games_CriaTabela.js"></script>
         <script src="scripts/games_Validacao.js"></script>
+        <script src="scripts/games_removeTr.js"></script>
+        <script src="scripts/games_filtro.js"></script>
     </body>
 </html>

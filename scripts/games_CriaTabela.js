@@ -1,28 +1,30 @@
-const recuperaDadosGame = (form) => {
-    let game = {
-        nome: form.nome.value,
-        genero: form.genero.value,
-        dev: form.dev.value,
-        ano: form.ano.value
-     }
-     return game
-}
+class Game {
+    constructor(form) {
+        this.nome = form.nome.value
+        this.genero = form.genero.value
+        this.dev = form.dev.value
+        this.ano = form.ano.value
+    }
 
-const criaColuna = (valor) => {
-    let gameTd = document.createElement('td')
-    gameTd.textContent = valor
-    
-    return gameTd
-}
+    criaColuna(valor, classe)  {
+        let gameTd = document.createElement('td')
+        gameTd.textContent = valor
+        gameTd.classList.add(classe)
+        
+        return gameTd
+    }
 
-const criaLinha = (game) => {
-    let gameTr = document.createElement('tr')
-    gameTr.appendChild(criaColuna(game.nome))
-    gameTr.appendChild(criaColuna(game.genero))
-    gameTr.appendChild(criaColuna(game.dev))
-    gameTr.appendChild(criaColuna(game.ano))
+    criaLinha() {
+        let gameTr = document.createElement('tr')
+        gameTr.classList.add('jogo')
 
-    return gameTr
+        gameTr.appendChild(this.criaColuna(this.nome, 'nome-game'))
+        gameTr.appendChild(this.criaColuna(this.genero, 'genero-game'))
+        gameTr.appendChild(this.criaColuna(this.dev, 'dev-game'))
+        gameTr.appendChild(this.criaColuna(this.ano, 'ano-game'))
+
+        return gameTr
+    }
 }
 
 
@@ -32,10 +34,10 @@ botao.addEventListener('click', (event) => {
     let form = document.querySelector('.form-games')
 
     //recupera dados do objeto game (criado a partir do form)
-    let game = recuperaDadosGame(form)
+    let game = new Game(form)
     
     //Cria linha com as tds
-    let gameTr = criaLinha(game)
+    let gameTr = game.criaLinha()
 
     //recupera tabela
     let tabela = document.querySelector('.tabela-games')
@@ -48,4 +50,6 @@ botao.addEventListener('click', (event) => {
 
     //adiciona <tr> com as <td> na tabela
     tabela.appendChild(gameTr)
+    form.reset() //limpa form
+    document.querySelector('.local-erros').innerHTML = '' //limpa erro
 })

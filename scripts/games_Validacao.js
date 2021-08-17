@@ -1,5 +1,5 @@
 const validaDados = (game) => {
-    invalido = []
+    let invalido = []
     if(game.nome.length == 0) {
         invalido.push('[ERRO] O nome do jogo é um campo obrigatório')
     }

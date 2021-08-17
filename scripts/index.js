@@ -23,13 +23,17 @@ email.addEventListener('input', (mail) => {
     }
 })
 
+    //ocultando conteudo html
 botao.addEventListener('click', (event) => {
-    //Deletando conteudo html
     event.preventDefault(); //previne o recarregamento da página
     const conteudo = document.querySelector('[data-form-conteudo]')
-    conteudo.remove(conteudo) //remove o conteudo da div
+    conteudo.classList.add('oculta-display') //oculta o conteudo da div
+})
+
+
 
     //Criando conteudo html
+botao.addEventListener('click', () => {
     const logado = document.querySelector('[data-logado]')
     const item = document.createElement('div') //cria um elemento html
     item.classList.add('div-login-js')
@@ -39,6 +43,7 @@ botao.addEventListener('click', (event) => {
     item.innerHTML = texto
     logado.appendChild(item)
 })
+
 
 botao.addEventListener('click', () => {
     //Alterando titulo da página
@@ -52,13 +57,4 @@ botao.addEventListener('click', () => {
     let p = document.querySelector('[data-p-section1]')
     p.textContent = 'Nossa querida maçã anunciou uma nova linha de produtos com visual ainda mais atraente, entretanto, não é somente o visual...'
 
-    //mudando atributos de todos os "leia mais"
-    let leia_mais = document.querySelectorAll('.a-leia-mais')
-    for(let i = 0; i < leia_mais.length; i++) {
-        link = leia_mais[i]
-        link.classList.add('leia-mais-plus')
-        console.log(link)
-    }
 })
-    
-    

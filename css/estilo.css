@@ -362,18 +362,28 @@ input.senha {
 	flex-direction: column;
 }
 
+.fitrando-jogos {
+	width: 20%;
+	padding: 0.5rem;
+	margin-bottom: 2rem;
+	border: none;
+	border-radius: 8px;
+}
+
 .div-games {
 	width: 100%;
 	display: flex;
 }
 
 table {
+	width: 100%;
 	margin-bottom : 5rem;
 	background: #eeeded;
 	color: #000;
 }
 
 td, th {
+	vertical-align: middle;
 	padding: 0.7em;
 	margin: 0;
 	border: 1px solid #7c2320;
@@ -464,10 +474,6 @@ th {
 	color: #d9534f;
 }
 
-.container .leia-mais-plus {
-	color: #000;
-}
-
 .local-erros {
 	text-align: center;
 }
@@ -475,4 +481,13 @@ th {
 .li-erro {
 	color: rgb(88, 4, 4);
 	margin-bottom: 1rem;
+}
+
+.tr-remove-fadeOut {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.oculta-display {
+	display: none;
 }
