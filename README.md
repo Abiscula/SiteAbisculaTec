@@ -7,5 +7,6 @@
 <p><strong>Edit: Projeto reestruturado com uso do Flexbox</strong></p>
 <p><strong>Edit2: Adicionado JS na index e na nova página (games) </strong></p>
 
+![image](https://user-images.githubusercontent.com/85578784/130083860-e3a27082-0a8d-4087-ad7b-deb98e458b73.png)
 
-![image](https://user-images.githubusercontent.com/85578784/128966882-50f93a12-2118-4d8e-909b-381a5c30a600.png)
+
