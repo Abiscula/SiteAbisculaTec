@@ -1,4 +1,4 @@
-const inputFiltro = document.querySelector('#games-filtro')
+const inputFiltro = $('#games-filtro')
 
 inputFiltro.addEventListener('input', function()  {
     let jogos = document.querySelectorAll('.jogo')

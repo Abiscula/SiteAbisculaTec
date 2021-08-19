@@ -1,4 +1,4 @@
-const tabela = document.querySelector('table')
+const tabela = $('table')
 
 tabela.addEventListener('dblclick', function(event) {
    let removeTr = event.target.parentNode

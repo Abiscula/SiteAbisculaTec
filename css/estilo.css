@@ -1,7 +1,7 @@
- .body-index {
+ body {
 	font-size: 1rem;
  	font-family: "Trebuchet MS", Helvetica, sans-serif;
- 	background: linear-gradient(#888888, #FEFEFE, #888888);
+ 	background: #D7CEC7;
  }
 
  header, h3, h2, footer, button {
@@ -11,7 +11,7 @@
 /* --------------- cabeçalho --------------- */
 
 header {
-	background: rgb(92, 91, 91);
+	background: #565656;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.473);
 	padding: 3rem;
 	text-align: center;
@@ -74,7 +74,7 @@ header a:hover {
 section {
 	padding: 1rem;
 	margin-bottom: 2rem;
-	background: rgb(141, 97, 91);
+	background: #c09f80b9;
 	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
 	border-radius: 15px;
 }
@@ -82,13 +82,13 @@ section {
 section p {
 	padding: 0.5rem;
 	text-align: center;
-	color: rgb(218, 213, 213);
+	color: #565656;
 }
 
 h2 {
 	font-size: 1.3rem;
 	font-weight: bold;
-	color: #FFF;
+	color: #f5f0f0;
 }
 
 .img-section {
@@ -96,9 +96,18 @@ h2 {
 	width: 100%;
 }
 
+.data-postagem {
+	font-size: 0.8em;
+	color: #76323F;
+	border-bottom: 1px solid #565656;
+	margin: 0.8rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
 .container .a-leia-mais {
 	display: block;
-	color: #97ABFF;
+	color: #76323F;
 	margin: 0.4rem 0 0.2rem;
 	text-decoration: none;
 }
@@ -123,7 +132,7 @@ h3 {
 	text-align: center;
 	font-size: 1.2rem;
 	padding: 0.5rem;
-	background: rgb(92, 91, 91);
+	background: #565656;
 	display: block;
 	color: #FFF;
 }
@@ -159,6 +168,7 @@ ul a {
 
 ul a:before {
 	content: ' ♦ ';
+	margin-left: 4px;
 }
 
 .conteudo-lateral ul a:hover {
@@ -169,7 +179,7 @@ footer {
 	text-align: center;
 	font-weight: bold;
 	padding: 1rem;
-	background: rgb(92, 91, 91);
+	background: #565656;
 	color: #FFF;
 }
 
@@ -186,17 +196,7 @@ footer {
 
 .conteudo-lateral li:hover {
 	color: #FFF;
-	background:  #d9534f;
-}
-
-
-.data-postagem {
-	font-size: 0.8em;
-	color: rgb(230, 225, 225);
-	border-bottom: 1px solid #e7e5e5;
-	margin: 0.8rem;
-	display: flex;
-	justify-content: flex-end;
+	background:  #5063af;
 }
 
 
@@ -256,7 +256,7 @@ input.senha {
 
 .botao-login {
 	color: #FFF;
-	background-color: #d9534f;
+	background-color: #5063af;
 	cursor: pointer;
 	margin-bottom: 10px;
 	height: 40px;
@@ -268,27 +268,27 @@ input.senha {
 }
 
 .botao-login:hover {
-	background-color: #7c2320;
+	background-color: #2a3e8d;
 	transform: scale(1.13);
 }
 
 
 /* --------------- Página Contato  --------------- */
-
-.body-contato {
-	font-size: 1rem;
- 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background: rgba(124, 121, 121, 0.74);
-}
-
 .formulario-cadastro {
 	display: flex;
-	flex-direction: column;
-	width: 100%;
 	width: 940px;
-	margin: 2rem auto;
-	padding: 5rem;
+	margin: 4rem auto;
+	
+}
+
+.div-formulario-cadastro {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	background: #565656be;
+	padding: 10%;
 	border-radius: 10px;
+	
 }
 
 .contato-label {
@@ -311,7 +311,7 @@ input.senha {
 }
 
 .contato-input::placeholder {
-	color: #d9534f;
+	color: #5063af;
 	font-size: 1rem;
 }
 
@@ -331,7 +331,7 @@ input.senha {
 
 .botao-contato {
 	color: #FEFEFE;
-	background-color: #d9534f;
+	background-color: #5063af;
 	cursor: pointer;
 	margin: 2rem 15% 2rem 15%;
 	height: 40px;
@@ -344,7 +344,7 @@ input.senha {
 }
 
 .botao-contato:hover {
-	background-color: #7c2320;
+	background-color: #2a3e8d;
 	transform: scale(1.13);
 }
 
@@ -352,7 +352,7 @@ input.senha {
 .body-games {
 	font-size: 1rem;
 	font-family: 'Montserrat', sans-serif;
-	background: rgba(148, 146, 146, 0.74);
+	background: #D7CEC7;
 }
 
 .main-games {
@@ -368,6 +368,8 @@ input.senha {
 	margin-bottom: 2rem;
 	border: none;
 	border-radius: 8px;
+	color: #76323F;
+	font-size: 1rem;
 }
 
 .div-games {
@@ -378,22 +380,22 @@ input.senha {
 table {
 	width: 100%;
 	margin-bottom : 5rem;
-	background: #eeeded;
-	color: #000;
+	background: #c09f8062;
+	color: #565656;
 }
 
 td, th {
 	vertical-align: middle;
 	padding: 0.7em;
 	margin: 0;
-	border: 1px solid #7c2320;
+	border: 1px solid #565656;
 	text-align: center;
 }
 
 th {
 	font-weight: bold;
-	background: rgb(141, 97, 91);
-	color: #FFF;
+	background: #646363;
+	color: #f5f0f0;
 }
 
 
@@ -401,7 +403,7 @@ th {
 .form-games {
 	display: flex;
 	flex-direction: column;
-	background: rgba(124, 121, 121, 0.74);
+	background: #646363af;
 	padding: 2rem;
 	border-radius: 10px;
 	margin-bottom: 5.2rem;
@@ -417,7 +419,7 @@ th {
 
 .games-label {
 	width: 30%;
-	color: white;
+	color: #f5f0f0;
 	font-weight: bold;
 }
 
@@ -428,6 +430,8 @@ th {
 	margin-bottom: 2rem;
 	border-radius: 8px;
 	border: none;
+	color: #76323F;
+	font-size: 1.2rem;
 }
 
 .div-game-button {
@@ -441,14 +445,14 @@ th {
 	width: 25%;
 	border-radius: 20px;
 	border: none;
-	background: rgb(141, 97, 91);
+	background: #5063af;
 	color: #FEFEFE;
 	font-size: 1.1rem;
 	cursor: pointer;
 }
 
 .button-game:hover {
-	background: rgb(92, 54, 49);
+	background: #2a3e8d;
 }
 
 /* --------------- Classes relacionadas as manipulações do JS  --------------- */
@@ -490,4 +494,12 @@ th {
 
 .oculta-display {
 	display: none;
+}
+
+.cadastro-realizado, .timer {
+	font-size: 1.4rem;
+	color: #FEFEFE;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 2rem;
 }
