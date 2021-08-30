@@ -7,8 +7,10 @@
         <title>AbisculaTec - Games</title>
         <!-- Limpando CSS padrão-->
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<!-- Meu estilo -->
+		<!-- CSS Geral -->
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <!-- CSS Página GAMES -->
+        <link rel="stylesheet" type="text/css" href="css/games.css">
 		<!-- Font -->
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head>
@@ -21,7 +23,7 @@
                 <nav class="nav-header">
                     <a href="index.html">Home</a>
                     <a href="games.html">Games</a>
-                    <a href="#">Smartphones</a>
+                    <a href="aplicativos.html">Aplicativos</a>
                     <a href="#">Informática</a>
                     <a href="contato.html">Contato</a>
                 </nav>
@@ -41,31 +43,14 @@
                         </tr>
                     </thead>
                     <tbody class="tabela-games">
-                        <tr class="jogo">
-                            <td class="nome-game">The Last of Us Part II</td>
-                            <td class="genero-game">Ação / Aventura / Survival horror</td>
-                            <td class="dev-game">Naughty Dog</td>
-                            <td class="ano-game">2020</td>
-                        </tr>
-                        <tr class="jogo">
-                            <td class="nome-game">The Elder Scrolls V: Skyrim</td>
-                            <td class="genero-game">RPG de ação</td>
-                            <td class="dev-game">Bethesda Game Studios</td>
-                            <td class="ano-game">2011</td>
-                        </tr>
-                        <tr class="jogo">
-                            <td class="nome-game">Ragnarok Online</td>
-                            <td class="genero-game">MMORPG</td>
-                            <td class="dev-game">Gravity Corporation</td>
-                            <td class="ano-game">2002</td>
-                        </tr>
-                        <tr class="jogo">
-                            <td class="nome-game">Tom Clancy's Rainbow Six Siege</td>
-                            <td class="genero-game">FPS</td>
-                            <td class="dev-game">Ubisoft</td>
-                            <td class="ano-game">2015</td>
-                        </tr>
+                        
                     </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Games adicionados</td>
+                            <td id="total-games"></td>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
                 <form class="form-games">
@@ -92,8 +77,12 @@
         <footer>
             <p>&copy; Victor Abiscula<p>
         </footer>
-        <script src="scripts/games_CriaTabela.js"></script>
-        <script src="scripts/games_removeTr.js"></script>
-        <script src="scripts/games_filtro.js"></script>
+        <script src="scripts/games/lista_de_jogos.js"></script>
+        <script src="scripts/games/CriaConteudo.js"></script>
+        <script src="scripts/games/AdicionaGame.js"></script>
+        <script src="scripts/games/TotalGames.js"></script>
+        <script src="scripts/games/Validador.js"></script>
+        <script src="scripts/games/Removedor.js"></script>
+        <script src="scripts/games/Filtro.js"></script>
     </body>
 </html>

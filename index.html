@@ -7,8 +7,10 @@
 		<title>AbisculaTec - O seu blog de tecnologia</title>
 		<!-- Limpando CSS padrão-->
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<!-- Meu estilo -->
+		<!-- CSS Geral -->
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<!-- CSS Index -->
+		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<!-- Font -->
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	</head>
@@ -21,7 +23,7 @@
 				<nav class="nav-header">
 					<a href="index.html">Home</a>
 					<a href="games.html">Games</a>
-					<a href="#">Smartphones</a>
+					<a href="aplicativos.html">Aplicativos</a>
 					<a href="#">Informática</a>
 					<a href="contato.html">Contato</a>
 				</nav>
@@ -31,21 +33,22 @@
 		<div class="container"> <!-- Inicio principal -->
 			<main class="main-index"> 
 				<section> <!-- Inicio section 1 -->
-					<h2 data-h2-section1>Ultra Phone X2 - Poderoso!</h2>
-					<span class="data-postagem">postado em 16 de junho 2021</span>
-					<img class="img-section" src="imagens/imagem3.jpg" data-img-section1>
+					<h2 data-h2-section1>PlayerUnknown's Battlegrounds</h2>
+					<span class="data-postagem">postado em 14 de junho 2021</span>
+					<img class="img-section" src="imagens/pubg.jpg" data-img-section1>
 					<p data-p-section1>
-						A <strong>Levelho</strong> anunciou o novo smartphone gamer Ultra Phone X2 nesta quarta-feira (16/06). Extremamente poderoso, o aparelho apresenta 16gb de memória RAM, duas portas USB-C e nossa boa e velha entrada p2.
+						<strong>PlayerUnknown's Battlegrounds</strong> (<strong>PUBG</strong>) é um game eletrônico multiplayer desenvolvido pela PUBG Corporation. O jogo consiste de até cem jogadores que caem...
 					</p>
 					<a href="#" class="a-leia-mais">Leia mais</a>
 				</section>  <!-- Fim section 1 -->
 
 				<section> <!-- Inicio section  2 -->
-					<h2>Notebook ultrafino e leve: vale a pena?</h2>
-					<span class="data-postagem">postado em 14 de junho 2021</span>
-					<img class="img-section" src="imagens/imagem1.jpg">
+					
+					<h2>Importância das redes sociais para o marketing digital</h2>
+					<span class="data-postagem">postado em 16 de junho 2021</span>
+					<img class="img-section" src="imagens/social.jpg">
 					<p>
-						A <strong>MicroSafe</strong> acaba de lançar seu mais novo produto, um notebook ultrafino que (<i>acredite se quiser</i>) passar em baixo da sua porta! Além do design inovar, o aparelho apresenta um hardware poderoso com 32gb de memória RAM, placa de vídeo GeForce 3060 e um belo SSD de 1tb.
+						As redes sociais mudaram a forma como as pessoas se relacionam com o mundo. Foram as interações sociais na pré-história que proporcionaram ao ser humano a evolução...
 					</p>
 					<a href="#" class="a-leia-mais">Leia mais</a>
 				</section>  <!-- Fim section 2 -->
@@ -64,7 +67,7 @@
 								<span class="cont-senha-login" data-cont-senha>mínimo 8 caracteres</span>
 							</div>
 							<div class="div-button">
-								<button data-button-login class="botao-login">Login</button>
+								<button data-button-login class="botao-login" name="botao-login" disabled>Login</button>
 							</div>
 						</form>
 					</div>
@@ -85,16 +88,16 @@
 				</div>
 
 				<div class="fundo-img-lateral">
-					<img class="img-lateral" src="Imagens/imagem4.jpg">
+					<img class="img-lateral" src="Imagens/free-fire.jpg">
 				</div>
 
 				<nav class="conteudo-lateral">
 					<h3>Categorias</h3>
 					<ul>
-						<li><a href="#">Games</a></li>
-						<li><a href="#">Smartphones</a></li>
+						<li><a href="games.html">Games</a></li>
+						<li><a href="aplicativos.html">Aplicativos</a></li>
 						<li><a href="#">Informática</a></li>
-						<li><a href="#">Contato</a></li>
+						<li><a href="contato.html">Contato</a></li>
 					</ul>
 				</nav>
 
@@ -108,6 +111,7 @@
 				<p>&copy; Victor Abiscula<p>
 			</footer>
 
-			<script src="./scripts/index.js"></script>
+			<script src="scripts/index/Validador.js"></script>
+			<script src="scripts/index/Modificador.js"></script>
 	</body>
 </html>
