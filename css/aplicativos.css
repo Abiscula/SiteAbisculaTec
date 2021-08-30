@@ -1,0 +1,62 @@
+main {
+    width: 940px;
+    margin: 2rem auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aplicativos {
+    padding: 2rem 0;
+}
+
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.item {
+    background: rgba(255, 255, 255,0.3);
+    display: grid;
+    grid-template-areas: 
+    "item-imagem"
+    "item-conteudo";
+    grid-template-columns: 100%;
+    grid-template-rows: 200px auto;
+    margin-right: 1rem;
+    width: calc(33.33% - 1rem);
+    border-radius: 10px;
+}
+
+.item:hover {
+    grid-template-rows: 220px auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.473);
+    cursor: pointer;
+}
+
+.imagem {
+    grid-area: item-imagem;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.conteudo {
+    grid-area: item-conteudo;
+    padding: .75rem;
+    color: #333333;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.cabecalho {
+    border-bottom: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao {
+    background: transparent;
+    border: none;
+    color: #333333;
+}
